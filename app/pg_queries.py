@@ -1,9 +1,9 @@
 import psycopg2
 
-DB_NAME = "lyvosnye"
-DB_USER = "lyvosnye"
-DB_PASSWORD = "e_2m1YCwgD-Xa-lLybReed3VuYI87Dfm"
-DB_HOST = "drona.db.elephantsql.com"
+DB_NAME = os.getenv("DB_NAME", default="OOPS")
+DB_USER = os.getenv("DB_USER", default="OOPS")
+DB_PASSWORD = os.getenv("DB_PASSWORD", default="OOPS")
+DB_HOST = os.getenv("DB_HOST", default="OOPS")
 
 connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST)
 print("CONNECTION:",connection)
