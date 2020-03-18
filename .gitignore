@@ -1,0 +1,7 @@
+
+
+# exclude hidden files on Mac:
+.DS_Store
+
+# exclude secret credentials inside the .env file:
+.env
