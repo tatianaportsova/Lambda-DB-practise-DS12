@@ -1,4 +1,10 @@
+
+# app/pg_queries.py
+
 import psycopg2
+import os
+from dotenv import load_dotenv
+load_dotenv() # look in the .env file for env vars, and add them to the env
 
 DB_NAME = os.getenv("DB_NAME", default="OOPS")
 DB_USER = os.getenv("DB_USER", default="OOPS")
