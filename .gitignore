@@ -5,3 +5,6 @@
 
 # exclude secret credentials inside the .env file:
 .env
+
+# just ignore. That one is a draft
+extra.py
